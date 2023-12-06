@@ -70,6 +70,13 @@ console.log(tableauExo);
 // }
 
 // CODE ICI
+const tableauSome = [5, 9, 10, 7]
+let somme = 0;
+for (let i = 0; i < tableauSome.length;i++) {
+somme = somme + tableauSome[i]
+}
+console.log(somme)
+
 
 //----------------------------------------------------------------------------------------------//
 
