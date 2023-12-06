@@ -49,12 +49,13 @@ console.log (fistElement);
 // console.log(monTableau) // [1, 2]
 
 // CODE ICI
-const monTabeau = [1, 2, 3, 4, 5, 6]
-function elimDernier(arr) = {
+const tableauExo = [1, 2, 3, 4, 5, 6]
+
+function elimDernier(arr)  {
     arr.pop()
 }
-elimDernier(monTabeau);
-console.log(monTabeau);
+elimDernier(tableauExo);
+console.log(tableauExo);
 
 
 //----------------------------------------------------------------------------------------------//
