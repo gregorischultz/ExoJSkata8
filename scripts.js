@@ -11,6 +11,13 @@
 // console.log(nomDeMaFonction(On remplace le paramètre par ce qu'on désire)) // 
 
 // CODE ICI
+const a = 7
+const b = 10
+const someMultipliee = (a,b) => {
+    let result = (a + b) * 2;
+    return result;
+} 
+console.log (someMultipliee(a,b));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 2
@@ -21,7 +28,15 @@
 // const monTableau = [1, 2, 3]
 // console.log(monTableau[0]) // 1
 
+
 // CODE ICI
+const monTabeau = [1, 2 , 3 , 4];
+const fistElement = fistElementTableau(monTabeau)
+function fistElementTableau(monTabeau) {
+    return monTabeau[0];
+}
+console.log (fistElement);
+
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 3
@@ -34,6 +49,13 @@
 // console.log(monTableau) // [1, 2]
 
 // CODE ICI
+const monTabeau = [1, 2, 3, 4, 5, 6]
+function elimDernier(arr) = {
+    arr.pop()
+}
+elimDernier(monTabeau);
+console.log(monTabeau);
+
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 4
