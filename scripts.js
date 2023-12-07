@@ -92,7 +92,13 @@ console.log(somme)
 //Maintenant que la string est inversée il faut la remettre en string avec la méthode join().
 
 // CODE ICI
-
+const maString = ("Hello");
+const stringTableau = maString.split("");
+console.log(stringTableau);
+const stringTableauInverse = stringTableau.reverse();
+console.log(stringTableauInverse);
+const stringInverseNorm = stringTableauInverse.join("");
+console.log(stringInverseNorm);
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 6
@@ -103,6 +109,8 @@ console.log(somme)
 // console.log(Math.max(...monTableau)) // 3
 
 // CODE ICI
+const tableauExo6 = [12, 30, 24, 77];
+console.log(Math.max(...tableauExo6));
 
 //----------------------------------------------------------------------------------------------//
 
@@ -114,7 +122,8 @@ console.log(somme)
 // console.log(Math.min(...monTableau)) // 1
 
 // CODE ICI
-
+const tableauExo7 = [13, 52, 35, 78];
+console.log(Math.min(...tableauExo7));
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 8
@@ -130,7 +139,13 @@ console.log(somme)
 // })
 
 // CODE ICI
-
+const stringExo8 = "Hello World"
+const tableauExo8 = stringExo8.split("")
+console.log(tableauExo8);
+const tableauFiltreExo8 = tableauExo8.filter((Element) => {
+    return Element !== "e" && Element !== "o"
+}) 
+console.log(tableauFiltreExo8);
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 9
