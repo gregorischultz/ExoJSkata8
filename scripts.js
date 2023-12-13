@@ -157,7 +157,12 @@ console.log(tableauFiltreExo8);
 // console.log(monTableau.sort()) // [1, 2, 3]
 
 // CODE ICI
-
+const tableauExo9 = [3, 77, 5, 9, 56, 1]
+function ordreCroissant (tableauExo9) {
+    tableauExo9.sort((a, b) => a - b);
+    return tableauExo9;
+}
+console.log(ordreCroissant(tableauExo9));
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 10
@@ -174,7 +179,13 @@ console.log(tableauFiltreExo8);
 // console.log(monTableau) // ["Hello", "elloH", "lloHe", "loHel", "oHell"]
 
 // CODE ICI
-
+const maStringExo10 = "Hello"
+const monTabeauExo10 = []
+for (let i = 0; i < maStringExo10.length; i++) {
+    const maStringRotate = maStringExo10.substring(i) + maStringExo10.substring(0, i);
+    monTabeauExo10.push(maStringRotate);
+}
+console.log(monTabeauExo10)
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 11
@@ -188,7 +199,11 @@ console.log(tableauFiltreExo8);
 // })
 
 // CODE ICI
-
+const monTableauExo11 = [9, 19, 29, 39]
+const monTableauAddition = monTableauExo11.map((Element) => {
+    return Element + 1
+})
+console.log(monTableauAddition);
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 12
@@ -202,7 +217,11 @@ console.log(tableauFiltreExo8);
 // })
 
 // CODE ICI
-
+const monTabeauExo12 = ["Gregori", "Schultz"]
+const monTableauLongueur = monTabeauExo12.map((Element) => {
+    return Element.length
+})
+console.log(monTableauLongueur);
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 13
@@ -217,7 +236,11 @@ console.log(tableauFiltreExo8);
 // })
 
 // CODE ICI
-
+const monTabeauExo13 = ["Gregori", "Schultz", "Menezes"];
+const monTableauPremiereLettre = monTabeauExo13.map((Element) => {
+return Element.charAt(0)
+})
+console.log(monTableauPremiereLettre);
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 14
