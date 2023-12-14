@@ -251,6 +251,11 @@ console.log(monTableauPremiereLettre);
 
 
 // CODE ICI
+const monTabeauExo14 = ["gregori", "schultz", "menezes"];
+const dernierElement = monTabeauExo14.map((Element) => {
+    return Element.charAt(Element.length - 1)
+})
+console.log(dernierElement);
 
 //----------------------------------------------------------------------------------------------//
 
@@ -261,7 +266,11 @@ console.log(monTableauPremiereLettre);
 // Pour cette exercice on va utiliser la méthode filter() qui permet de filtrer un tableau, hésitez pas à regarder l'exercice 8 pour voir comment ça fonctionne. Sauf qu'ici on va filtrer en fonction de la longueur de la string. Incice : la méthode length() permet de récupérer la longueur d'une string.
 
 // CODE ICI
-
+const tableauExo15 = ["ola", "gregori", "poulet", "alô","hamburguer"];
+const stringFiltreExo15 = tableauExo15.filter((Element) => {
+    return Element.length >= 5;
+})
+console.log(stringFiltreExo15);
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 16
@@ -275,6 +284,11 @@ console.log(monTableauPremiereLettre);
 // }, 0)
 
 // CODE ICI
+const tableauExo16 = [4, 10, 60];
+const some = tableauExo16.reduce((accumulateur, element) => {
+    return accumulateur + element
+})
+console.log(some)
 
 //----------------------------------------------------------------------------------------------//
 
@@ -289,7 +303,10 @@ console.log(monTableauPremiereLettre);
 // console.log(monTableauConcat) // ["Hello", "World", "Test", "Salut"]
 
 // CODE ICI
-
+const premierTableauExo17 = ["gregori", "schultz"];
+const deuxièmeTableauExo17 = ["camila", "rodrigues"];
+const tableauEnsemble = premierTableauExo17.concat(deuxièmeTableauExo17);
+console.log(tableauEnsemble);
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 18
@@ -299,7 +316,11 @@ console.log(monTableauPremiereLettre);
 // Pour cette exercice on va utiliser la méthode filter() qui permet de filtrer un tableau, hésitez pas à regarder l'exercice 8 pour voir comment ça fonctionne. Sauf qu'ici on va filtrer en fonction de la présence de la lettre "e". Indice : la méthode includes() permet de savoir si une string contient une lettre ou un mot.
 
 // CODE ICI
-
+const tableauExo18 = ["Poulet", "Chat", "Chien", "Cheval"];
+const tableauE = tableauExo18.filter((element) => {
+    return element.includes("e")
+})
+console.log(tableauE);
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 19
@@ -309,6 +330,22 @@ console.log(monTableauPremiereLettre);
 // Indice : il y a plusieurs façon de faire, soit avec un for, soit avec la méthode filter() une fois ça fait utilise la méthode sort() qui permet de trier un tableau.
 
 // CODE ICI
+const tableauExo19 = [ 2, 9, 6, 5, 6, 30, 12];
+
+function nombrePairsOr(arr){
+const nombrePairs = [];
+for (let i = 0; i < arr.length; i++ ) {
+    if (arr[i] % 2 === 0) {
+nombrePairs.push(arr[i]);
+    }
+}
+nombrePairs.sort((a,b) => a - b);
+    return nombrePairs;
+}
+
+
+const result = nombrePairsOr(tableauExo19);
+console.log(result);
 
 //----------------------------------------------------------------------------------------------//
 
