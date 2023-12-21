@@ -378,7 +378,17 @@ console.log(result);
 
 
 // CODE ICI
-
+const findShortExo20 = (frase) => {
+    let transformTableau = frase.split("");
+    let tableauLongueurExo20 = transformTableau.map ((element) => {
+        return element.length
+    });
+    let tableauOrdem = tableauLongueurExo20.sort ((a, b) => {
+        return a - b
+    });
+    return tableauOrdem[0]
+}
+console.log (findShortExo20("Por fim, a função retorna o primeiro elemento do array ordenado, que corresponde ao comprimento da palavra mais curta."))
 
 
 
