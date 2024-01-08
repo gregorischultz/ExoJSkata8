@@ -429,7 +429,19 @@ console.log (findShortExo20("Por fim, a função retorna o primeiro elemento do 
 
 
 // CODE ICI
-
+const anagram = (palavra1, palavra2) => {
+    let tabela1 = palavra1.split("");
+    let tabela2 = palavra2.split("");
+    let tabela1Tri = tabela1.sort();
+    let tabela2Tri = tabela2.sort();
+    if (tabela1Tri.join("") === tabela2Tri.join("")) {
+        return true
+    } 
+    else {
+        return false
+    }
+}
+console.log (anagram("roma", "amor"));
 
 
 
@@ -471,7 +483,10 @@ console.log (findShortExo20("Por fim, a função retorna o primeiro elemento do 
 
 
 // CODE ICI
-
+const sansDouble = (arr) => {
+    let tableauExo22 = arr.split("");
+    let tableauFiter22 = tableauExo22.filter()
+}
 
 
 
