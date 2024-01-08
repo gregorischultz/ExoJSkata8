@@ -485,8 +485,16 @@ console.log (anagram("roma", "amor"));
 // CODE ICI
 const sansDouble = (arr) => {
     let tableauExo22 = arr.split("");
-    let tableauFiter22 = tableauExo22.filter()
+    for (let i = 0; i < tableauExo22.length; i++) {
+        if (tableauExo22[i] === tableauExo22[i + 1]) {
+            tableauExo22.splice(i , 1)
+        }
+    }
+    return tableauExo22.join("")
 }
+console.log(sansDouble("cachorro"));
+
+    
 
 
 
@@ -499,7 +507,7 @@ const sansDouble = (arr) => {
 //----------------------------------------------------------------------------------------------//
 //----------------------------------------------------------------------------------------------//
 
-// const removeDoubleLetters = (string) => {
+// c21onst removeDoubleLetters = (string) => {
 //     let tableau = string.split("")
 //     let tableauFiltre = tableau.filter((element, index) => {
 //         return element !== tableau[index + 1]
